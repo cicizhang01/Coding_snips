@@ -1,7 +1,6 @@
 import random
 import numpy as np
 
-
 def generate_target_function():
     """
     Generates random target function with d = 2 by taking two random points between
@@ -95,8 +94,6 @@ def run_trials(num_points, num_of_times):
     avg_prob_failing = prob_failing / num_of_times
     avg_iters = total_iters / num_of_times
     print("Average iters: {} Average probability to fail: {}".format(avg_iters, avg_prob_failing))
-
-
 
 run_trials(10, 1000)
 run_trials(100, 1000)
